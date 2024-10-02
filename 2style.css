@@ -1,0 +1,253 @@
+/* General Styles */
+*{
+    margin: 0;
+    padding:0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #171414;
+}
+.image img {
+    max-height: 500px;
+    height: 460px;
+    max-width: 500px;
+    width: 350px;
+    margin-left: 50px;
+    border-radius: 17px;
+    z-index:-1;
+    margin-top: 70px;
+    box-shadow: 0px 0px 15px rgba(16, 90, 3, 0.9);
+}
+.image{
+    width: 50%;
+}
+/* .image:hover{
+    transition: 0.3ms;
+    box-shadow: 0px 0px 15px rgba(11, 23, 239, 0.9);
+    img: url(../tesla.jpg);
+} */
+
+/* Header Styles */
+.header{
+    display: flex;
+   justify-content: space-around;
+   position: fixed;
+   z-index:1;
+ }
+ .LR{
+    margin-right: 400px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #aabbaa;
+ }
+header {
+   background-color: #3b3b3a8a;
+   color: #faf7f7;
+   padding: 1rem;
+   font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ /* logo is nav img */
+ nav img{
+     width: 180px;
+     height: 70px;
+     z-index: 1;
+   }
+   
+   nav h1 {
+     font-size: 1.5rem;
+     /* font-family: "Pacifico", cursive; */
+   }
+   
+   nav ul {
+     list-style: none;
+   }
+   
+   nav ul li {
+     display: inline;
+     margin-right: 15px;
+   }
+   
+   nav ul li a {
+     color: #63825e;
+     text-decoration: none;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     
+   }
+
+
+/* Booking Form Styles */
+#booking-form {
+    margin-top: -490px;
+    background-color: #3938389d;
+    max-width: 400px;
+    width: 350px;
+    height: 460px;
+    color: #838f6b;
+    margin-left:700px;
+    padding: 30px;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#booking-form h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Styles */
+.book-now-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #063d16;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.book-now-button:hover {
+    transition: 0,3ms;
+    background-color: rgb(6, 10, 14);
+    color: rgb(201, 213, 223);
+}
+
+/* Footer Styles */
+footer  {
+    background-color: #17161697;
+    color: #ffffffc2;
+    padding: 1rem;
+    margin-top: 200px;
+  
+  }
+
+  footer p{
+    text-align: center;
+ font-family: "Montserrat", sans-serif;  }
+
+  footer h3{
+   margin-right: -100px;
+   margin-top: -80px;
+   font-family: "Oswald", sans-serif;
+  }
+
+  footer h4 {
+    margin-bottom: -77px;
+    margin-left: 900px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+.footer-content {
+  margin:  10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.social-links {
+    margin: 15px 0;
+}
+
+.social-link {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    text-align: center;
+  
+}
+
+.social-link:hover {
+    color: #f06a30;
+    text-shadow: 0 0 10px #f0e130;
+}
+
+
+/* navigation for links bottoms */
+.footer-nav {
+    margin: 10px 0;
+    
+}
+
+.footer-link {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #00bcd4;
+    text-shadow: 0 0 10px #00bcd4;
+}
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation links */
+        align-items: center; /* Center align */
+        margin-left: -150px;
+    }
+    .header{
+        width: 90px;
+    }
+    .LR {
+        margin-bottom: 10px; /* Space below the title */
+    }
+    
+    .image img {
+        max-width: 100%; /* Full width for images */
+        height: auto; /* Auto height for aspect ratio */
+    }
+
+    #booking-form {
+        width: 90%; /* Full width on small screens */
+        margin: 20px auto; /* Centered margin */
+        padding: 20px; /* Adjusted padding */
+    }
+
+    footer {
+        font-size: 12px; /* Smaller font for mobile */
+    }
+
+    footer h3, footer h4 {
+        font-size: 12px; /* Smaller font for footer headings */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Vertical spacing for mobile links */
+    }
+}

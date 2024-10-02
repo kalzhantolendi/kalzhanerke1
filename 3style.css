@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.header{
+    display: flex;
+   justify-content: space-around;
+   position: fixed;
+   z-index:1;
+ }
+
+.text{
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(231, 231, 238); 
+}
+text:hover{
+     transition: 0.3;
+     color: #141768;
+}
+
+  body {
+   
+   line-height: 1.6;
+   background-color: #0c0b0b3a;
+   
+}
+
+header {
+   background-color: #abaaaa68;
+   color: #616060;
+   padding: 1rem;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo is nav img */
+nav img{
+  width: 180px;
+  height: 70px;
+  z-index: 1;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  margin-left: 20px;
+  margin-right: 390px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.car-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.car-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-top: 20px;
+}
+.car-card:hover {
+    transform: scale(1.05);
+}
+
+.car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.car-details {
+    padding: 20px;
+    text-align: center;
+}
+.price {
+    font-size: 1.2em;
+    color: #eb5f2d;
+    margin-bottom: 20px;
+}
+
+.rent-btn {
+    background-color: #f15b24;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rent-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.rent-btn:active {
+    transition: 0,3ms;
+    background-color:#4a0808;
+    color: #fff;
+
+}
+
+.car-details h2 {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer  {
+    background-color: #17161697;
+    color: #ffffffc2;
+    padding: 1rem;
+    margin-top: 200px;
+  
+  }
+
+  footer p{
+    text-align: center;
+ font-family: "Montserrat", sans-serif;  }
+
+  footer h3{
+   margin-right: -100px;
+   margin-top: -80px;
+   font-family: "Oswald", sans-serif;
+  }
+
+  footer h4 {
+    margin-bottom: -77px;
+    margin-left: 900px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+.footer-content {
+  margin:  10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.social-links {
+    margin: 15px 0;
+}
+
+.social-link {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    text-align: center;
+  
+}
+
+.social-link:hover {
+    color: #f06a30;
+    text-shadow: 0 0 10px #f0e130;
+}
+
+
+/* navigation for links bottoms */
+.footer-nav {
+    margin: 10px 0;
+    
+}
+
+.footer-link {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #00bcd4;
+    text-shadow: 0 0 10px #00bcd4;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        margin-left: -200px;
+    }
+
+    .car-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .text h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 1.5em;
+    }
+
+    .text p {
+        font-size: 1em;
+    }
+
+    .rent-btn {
+        width: 100%;
+    }
+}
